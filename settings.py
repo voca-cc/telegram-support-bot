@@ -9,7 +9,7 @@ if TELEGRAM_TOKEN is None:
     raise Exception("Please setup the .env variable TELEGRAM_TOKEN.")
 
 PORT = int(os.environ.get('PORT', '8443'))
-HEROKU_APP_NAME = os.getenv("telegram-support-bot")
+HEROKU_APP_NAME = os.getenv("go-voca-bot")
 
 TELEGRAM_SUPPORT_CHAT_ID = os.getenv("285793787")
 if TELEGRAM_SUPPORT_CHAT_ID is None or not str(TELEGRAM_SUPPORT_CHAT_ID).lstrip("-").isdigit():
